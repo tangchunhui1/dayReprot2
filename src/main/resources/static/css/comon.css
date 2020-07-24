@@ -1,0 +1,148 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box}
+*,body{padding:0px;	margin:0px;color: #222;font-family: "微软雅黑";}
+@font-face{font-family:electronicFont;src:url(/static/fonts/DS-DIGIT.TTF)}
+
+body{ background:#000d4a url(/static/images/bg.jpg) center top; background-size:cover;color:#666;font-size: .1rem;}
+li{ list-style-type:none;}
+table{}
+i{ margin:0px; padding:0px; text-indent:0px;}
+img{ border:none; max-width: 100%;}
+a{ text-decoration:none; color:#399bff;}
+a.active,a:focus{ outline:none!important; text-decoration:none;}
+ol,ul,p,h1,h2,h3,h4,h5,h6{ padding:0; margin:0}
+a:hover{ color:#06c; text-decoration: none!important}
+
+
+/*谷哥滚动条样式*/
+
+  ::-webkit-scrollbar {width:.2rem;height:.3rem;position:absolute}
+  ::-webkit-scrollbar-thumb {background-color: #a8e5ff}
+  ::-webkit-scrollbar-track {background-color: #ffffff}
+
+/***/
+/*.canvas{position:absolute;  top:0;  bottom:0;  left:0;   right:0 }*/
+
+/*.canvas{position: absolute; width:100%; left: 0; top: 0; right:0; height: 99%; z-index: 1 }*/
+
+
+	.allnav{height: calc(100% - 30px);}
+	.loading{position:fixed; left:0; top:0; font-size:18rem; z-index:100000000;width:100%; height:100%; background:#1a1a1c; text-align:center;}
+	.loadbox{position:absolute; width:160%;height:150%; color: #aaa; left:50%; top:50%; margin-top:-100px; margin-left:-75%;}
+	.loadbox img{ margin:10px auto; display:block; width:40%;}
+
+	.copyright{ background:rgba(19,31,64,.32); border: 1px solid rgba(255,255,255,.05); line-height:.5rem; text-align: center; padding-right: 15%; bottom: 0; color:rgba(255,255,255,.7); font-size: .16rem; }
+
+	.head{ height:1.05rem; background: url(../images/head_bg.png) no-repeat center center; background-size: 100% 100%; position: relative; z-index: 100;}
+	.head h1{ color:#fff; text-align: center; font-size: .4rem; line-height:.8rem;}
+	.head h1 img{ width:1.5rem; display: inline-block; vertical-align: middle; margin-right: .2rem}
+	.weather{ position:absolute;  top:0%; line-height: 1rem; width:100%; height:50% }
+	.month{ font-size: .2rem; margin-left: 2%; margin-top:0%; margin-bottom: 40%; background: rgba(11, 20, 128, 0.81);color: #c4c4cb;
+		border:.1px solid #32d6e5;width:1.8rem;height: .3rem;border-radius: .1rem}
+	.searchbtn{font-size:.2rem; margin-left:.2rem;margin-top:0%; margin-bottom: 40%;background: rgba(11, 19, 128, 0.8);color: #c4c4cb;
+	border:.1px solid #32d6e5;width:.5rem;height: .3rem;border-radius: .1rem}
+	.btn{font-size:.2rem; margin-left: 2%;margin-top:0%; margin-bottom: 40%;background: rgba(12, 24, 128, 0.8);color: #c4c4cb;
+	border:.1px solid #32d6e5;width:1rem;height: .3rem;border-radius: .1rem}
+	/*.weather img{ width:.37rem; display: inline-block; vertical-align: middle;}*/
+	/*.weather span{color:rgba(255,255,255,.7); font-size: .18rem; }*/
+	.weather span{color:rgba(255,255,255,.7); font-size: .2rem;  margin-left:50% }
+	/*padding-right: 5rem;*/
+	.mainbox{ padding:.1rem .1rem 0rem .1rem;}
+	.mainbox>ul{}
+	.mainbox>ul>li{ float: left; padding: 0 .1rem}
+
+	.mainbox>ul>li{ width: 30%}
+	.mainbox>ul>li:nth-child(2){ width: 40%;padding: 0}
+
+	.boxall{ border: 1px solid rgba(8, 26, 255, 0.24); padding:0 .2rem .4rem .15rem;  background: rgba(255,255,255,.04) url(/static/images/line.png); background-size: 100% auto; position: relative; margin-bottom: .15rem; z-index: 10;}
+	.boxall:before,
+	.boxall:after{ position:absolute; width: .1rem; height: .1rem; content: "";  border-top: 2px solid #02a6b5; top: 0;}
+	.boxall:before,.boxfoot:before{border-left: 2px solid #02a6b5;left: 0;}
+	.boxall:after,.boxfoot:after{border-right: 2px solid #02a6b5; right: 0;}
+	.alltitle{ font-size:.2rem; color:#fff; text-align: center; line-height: .5rem; height:8%;}
+
+	.boxfoot{ position:absolute; bottom: 0; width: 100%; left: 0;}
+	.boxfoot:before,
+	.boxfoot:after{ position:absolute; width: .1rem; height: .1rem;  content: "";border-bottom: 2px solid #02a6b5; bottom: 0;}
+
+	.map{  position:relative; height: 7.2rem; z-index: 9;}
+
+	.charts{
+		width: 100%;
+		height:100%;
+	}
+	.data_chart{
+		width: 100%;
+		/*margin-left: 2%;*/
+		height: 100%;
+		/*padding-top: 2%;*/
+		/*position: relative;*/
+		/*margin-top: .2rem; z-index: 5;*/
+	}
+
+
+
+@keyframes myfirst2
+{
+from {transform: rotate(0deg);}
+to {transform: rotate(359deg);}
+}
+
+@keyframes myfirst
+{
+from {transform: rotate(0deg);}
+to {transform: rotate(-359deg);}
+}
+
+
+/*Plugin CSS*/
+.str_wrap {
+	overflow:hidden;
+	width:100%;
+	position:relative;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	white-space:nowrap;
+}
+
+
+.str_move {
+	white-space:nowrap;
+	position:absolute;
+	top:0;
+	left:0;
+	cursor:move;
+}
+.str_move_clone {
+	display:inline-block;
+	vertical-align:top;
+	position:absolute;
+	left:100%;
+	top:0;
+}
+.str_vertical .str_move_clone {
+	left:0;
+	top:100%;
+}
+.str_down .str_move_clone {
+	left:0;
+	bottom:100%;
+}
+.str_vertical .str_move,
+.str_down .str_move {
+	white-space:normal;
+	width:100%;
+}
+.str_static .str_move,
+.no_drag .str_move,
+.noStop .str_move{
+	cursor:inherit;
+}
+.str_wrap img {
+	max-width:none !important;
+}

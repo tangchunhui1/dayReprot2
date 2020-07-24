@@ -10,10 +10,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yunwei</groupId>
-    <artifactId>dayReport</artifactId>
+    <artifactId>dayReprot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>dayReport</name>
+    <name>dayReprot</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -131,7 +131,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.yunwei.dayReport.DayReportApplication</mainClass>
+                    <mainClass>com.yunwei.dayReprot.dayReprotApplication</mainClass>
                 </configuration>
             </plugin>
 
